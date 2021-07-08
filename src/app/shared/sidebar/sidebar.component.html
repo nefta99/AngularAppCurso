@@ -5,7 +5,10 @@
     </h3>
     <hr class="text-white" >
     <div class="list-group list-reset">
-      <a *ngFor="let item of hitorialGif"  href="#" class="list-group-item list-group-item-action">
+      <a *ngFor="let item of hitorialGif"  
+        (click)="buscar(item)"
+        href="#" 
+        class="list-group-item list-group-item-action">
         {{item | titlecase }}
       </a>
      
